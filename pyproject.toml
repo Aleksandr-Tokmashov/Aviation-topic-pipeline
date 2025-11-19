@@ -1,0 +1,18 @@
+[project]
+name = "aviation-topic-pipeline"
+version = "0.1.0"
+description = "Thematic modeling of posts from aviation Telegram channels"
+authors = [
+    {name = "Aleksandr Tokmashov",email = "atokmasov.71@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mlflow (>=3.6.0,<4.0.0)",
+    "dvc (>=3.64.0,<4.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
