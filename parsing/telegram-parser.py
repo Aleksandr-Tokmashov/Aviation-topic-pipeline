@@ -62,7 +62,7 @@ def parse_messages(client, channel_name, total_count_limit, limit = 100, offset_
         print(f"Парсинг сообщений {channel_name} успешно выполнен.") 
 
 
-channels = {'favt_ru': 3000, 'aviatorshina': 1000, 's7newsroom': 500, 'aeroflot_official': 500}
+channels = {'favt_ru': 4000, 'aviatorshina': 2000, 's7newsroom': 1000, 'aeroflot_official': 1000}
 
 for channel_name, total_count_limit in channels.items():
     parse_messages(client, channel_name, total_count_limit)
