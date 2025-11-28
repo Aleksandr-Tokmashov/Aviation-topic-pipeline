@@ -1,0 +1,11 @@
+artifact_location: /home/alex/Desktop/aviation-topic-pipeline/my-artifacts/models/m-396604b3836b4f4586feafdeccf856dc/artifacts
+creation_timestamp: 1764297155288
+experiment_id: '307744178423469694'
+last_updated_timestamp: 1764297157956
+lifecycle_stage: deleted
+model_id: m-396604b3836b4f4586feafdeccf856dc
+model_type: ''
+name: lda_model
+source_run_id: 98bcc543c3aa4b81b2bdf7ea4434f06e
+status: 2
+status_message: null
