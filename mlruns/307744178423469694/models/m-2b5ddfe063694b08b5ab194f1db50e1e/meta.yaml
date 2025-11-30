@@ -2,6 +2,7 @@ artifact_location: /home/alex/Desktop/aviation-topic-pipeline/my-artifacts/model
 creation_timestamp: 1764298087477
 experiment_id: '307744178423469694'
 last_updated_timestamp: 1764298089583
+lifecycle_stage: deleted
 model_id: m-2b5ddfe063694b08b5ab194f1db50e1e
 model_type: ''
 name: nmf_model

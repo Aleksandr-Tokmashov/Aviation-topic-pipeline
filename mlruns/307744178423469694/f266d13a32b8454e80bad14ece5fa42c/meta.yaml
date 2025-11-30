@@ -4,7 +4,7 @@ entry_point_name: ''
 experiment_id: '307744178423469694'
 lifecycle_stage: active
 run_id: f266d13a32b8454e80bad14ece5fa42c
-run_name: LDA_10_topics
+run_name: LDA_10_topics_v1
 source_name: ''
 source_type: 4
 source_version: ''

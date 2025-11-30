@@ -1,0 +1,15 @@
+creation_timestamp: 1764509334535
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1764509334535
+model_id: m-97f1b0cf21574dcfb2ae8633956fd2ff
+name: LDA_Topic_Model
+run_id: 7f556b57b2934a59aed3320e1ab90d2a
+run_link: null
+source: models:/m-97f1b0cf21574dcfb2ae8633956fd2ff
+status: READY
+status_message: null
+storage_location: /home/alex/Desktop/aviation-topic-pipeline/my-artifacts/models/m-97f1b0cf21574dcfb2ae8633956fd2ff/artifacts
+user_id: null
+version: 2
