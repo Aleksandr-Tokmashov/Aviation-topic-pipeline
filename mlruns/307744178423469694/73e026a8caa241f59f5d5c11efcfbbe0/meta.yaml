@@ -1,8 +1,9 @@
 artifact_uri: /home/alex/Desktop/aviation-topic-pipeline/my-artifacts/73e026a8caa241f59f5d5c11efcfbbe0/artifacts
+deleted_time: 1764328923517
 end_time: 1764295243463
 entry_point_name: ''
 experiment_id: '307744178423469694'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 73e026a8caa241f59f5d5c11efcfbbe0
 run_name: LDA_5_topics
 source_name: ''
