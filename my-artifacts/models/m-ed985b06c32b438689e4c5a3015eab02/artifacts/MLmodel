@@ -1,0 +1,14 @@
+artifact_path: /home/alex/Desktop/aviation-topic-pipeline/my-artifacts/models/m-ed985b06c32b438689e4c5a3015eab02/artifacts
+flavors:
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.6.0
+model_id: m-ed985b06c32b438689e4c5a3015eab02
+model_size_bytes: 326158
+model_uuid: m-ed985b06c32b438689e4c5a3015eab02
+prompts: null
+run_id: f91bcce2b7bb4e22988dff2f3d26a5a3
+utc_time_created: '2025-12-01 11:05:41.246355'

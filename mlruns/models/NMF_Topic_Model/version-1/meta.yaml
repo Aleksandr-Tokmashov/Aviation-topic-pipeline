@@ -1,0 +1,15 @@
+creation_timestamp: 1764592575325
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1764592575325
+model_id: m-1340dc1befa1497693ca4c3b619c29fd
+name: NMF_Topic_Model
+run_id: d103279943e8457282b3102f9768b80b
+run_link: null
+source: models:/m-1340dc1befa1497693ca4c3b619c29fd
+status: READY
+status_message: null
+storage_location: /home/alex/Desktop/aviation-topic-pipeline/my-artifacts/models/m-1340dc1befa1497693ca4c3b619c29fd/artifacts
+user_id: null
+version: 1

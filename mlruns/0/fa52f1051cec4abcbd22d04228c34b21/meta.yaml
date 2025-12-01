@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/fa52f1051cec4abcbd22d04228c34b21/artifacts
+end_time: 1764511343731
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fa52f1051cec4abcbd22d04228c34b21
+run_name: LDA_5_topics_v1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764511343714
+status: 3
+tags: []
+user_id: alex

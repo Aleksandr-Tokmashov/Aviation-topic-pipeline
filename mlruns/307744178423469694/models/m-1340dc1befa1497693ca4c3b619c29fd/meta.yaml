@@ -1,0 +1,10 @@
+artifact_location: /home/alex/Desktop/aviation-topic-pipeline/my-artifacts/models/m-1340dc1befa1497693ca4c3b619c29fd/artifacts
+creation_timestamp: 1764592573431
+experiment_id: '307744178423469694'
+last_updated_timestamp: 1764592575321
+model_id: m-1340dc1befa1497693ca4c3b619c29fd
+model_type: null
+name: NMF_model
+source_run_id: d103279943e8457282b3102f9768b80b
+status: 2
+status_message: null

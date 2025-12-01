@@ -1,0 +1,14 @@
+artifact_uri: /home/alex/Desktop/aviation-topic-pipeline/my-artifacts/0f6cc44f5b6f47f58d62db60d43c1cfb/artifacts
+end_time: 1764590385351
+entry_point_name: ''
+experiment_id: '307744178423469694'
+lifecycle_stage: active
+run_id: 0f6cc44f5b6f47f58d62db60d43c1cfb
+run_name: NMF_15_topics
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764590384149
+status: 3
+tags: []
+user_id: alex
