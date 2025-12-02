@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/5c66daef1bf44d3eaa73d22973d02984/artifacts
+end_time: 1764672912990
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5c66daef1bf44d3eaa73d22973d02984
+run_name: BERTopic_min_size_30
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764672699781
+status: 4
+tags: []
+user_id: alex

@@ -1,0 +1,15 @@
+creation_timestamp: 1764692496601
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1764692496601
+model_id: m-3869a002c3b14853ac34ad861da58658
+name: BERTopic_Model
+run_id: 5271e7077f7b4075beb87a7329f6c296
+run_link: null
+source: models:/m-3869a002c3b14853ac34ad861da58658
+status: READY
+status_message: null
+storage_location: /home/alex/Desktop/aviation-topic-pipeline/my-artifacts/models/m-3869a002c3b14853ac34ad861da58658/artifacts
+user_id: null
+version: 1

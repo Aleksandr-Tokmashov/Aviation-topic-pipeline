@@ -2,3 +2,6 @@
 *.env
 *.session
 notebooks/topics.txt
+notebooks/temp-data
+notebooks/temp-charts
+/my-artifacts
