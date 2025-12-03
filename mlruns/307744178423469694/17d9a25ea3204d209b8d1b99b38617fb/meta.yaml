@@ -1,0 +1,15 @@
+artifact_uri: /home/alex/Desktop/aviation-topic-pipeline/my-artifacts/17d9a25ea3204d209b8d1b99b38617fb/artifacts
+deleted_time: 1764724143334
+end_time: 1764724060507
+entry_point_name: ''
+experiment_id: '307744178423469694'
+lifecycle_stage: deleted
+run_id: 17d9a25ea3204d209b8d1b99b38617fb
+run_name: LDA_7_topics
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764724052624
+status: 3
+tags: []
+user_id: alex
