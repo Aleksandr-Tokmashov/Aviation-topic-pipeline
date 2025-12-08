@@ -1,0 +1,14 @@
+artifact_uri: /home/alex/Desktop/aviation-topic-pipeline/my-artifacts/456bd30fe2834711a25d7aaa47e6398a/artifacts
+end_time: 1765146574547
+entry_point_name: ''
+experiment_id: '307744178423469694'
+lifecycle_stage: active
+run_id: 456bd30fe2834711a25d7aaa47e6398a
+run_name: BERTopic_opt_12_40
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765145323459
+status: 3
+tags: []
+user_id: alex
