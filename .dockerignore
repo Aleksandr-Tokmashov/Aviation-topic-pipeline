@@ -1,0 +1,12 @@
+.dvc/
+data/
+mlruns/
+my-artifacts/
+notebooks/
+parsing/
+.dvcignore
+.env
+.gitignore
+*.session
+*.dvc
+pyproject.toml
