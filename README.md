@@ -79,11 +79,11 @@ cp .env.example .env
 ### Запуск инференс-сервиса с Docker
 **Облегченная версия (без BERTopic):**
 ```
-docker build -t avia-pipeline -f Dockerfile.light . && docker run --name topic-model-service avia-pipeline
+docker build -t avia-pipeline -f Dockerfile.light . && docker run --name topic-model-service -p 8000:8000 avia-pipeline
 ```
 **C BERTopic:**
 ```
-docker build -t avia-pipeline . && docker run --name topic-model-service avia-pipeline
+docker build -t avia-pipeline . && docker run --name topic-model-service -p 8000:8000 avia-pipeline
 ```
 Перейти на: http://localhost:8000/docs
 
