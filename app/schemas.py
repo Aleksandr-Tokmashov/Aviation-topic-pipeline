@@ -33,3 +33,11 @@ class PredictionResponse(BaseModel):
     text: str
     model_type: ModelType
     main_topic: TopicInfo
+
+class ModelInfo(BaseModel):
+    """Информация о модели"""
+    type: str
+    loaded: bool
+    topics_count: Optional[int] = None
+    topics: Optional[List[str]] = None
+    description: Optional[str] = None

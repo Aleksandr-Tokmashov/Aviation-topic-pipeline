@@ -12,7 +12,6 @@ from nltk.corpus import stopwords
 from app.config import settings
 from app.schemas import ModelType
 
-# Загрузка стоп-слов
 nltk.download('stopwords', quiet=True)
 
 class TextPreprocessor:
@@ -75,6 +74,32 @@ class ModelService:
         
         return success
     
+    def get_all_models_info(self) -> Dict[str, Any]:
+        """Информация о всех моделях"""
+        info = {}
+        
+        for model_type in ModelType:
+            try:
+                model_data = self.get_model(model_type)
+                info[model_type.value] = {
+                    "type": model_type.value,
+                    "loaded": True,
+                    "topics_count": model_data.get('n_topics', 0),
+                    "topics": model_data.get('topics', []),
+                    "description": {
+                        ModelType.LDA: "Latent Dirichlet Allocation",
+                        ModelType.NMF: "Non-negative Matrix Factorization",
+                        ModelType.BERTOPIC: "BERTopic с трансформерами"
+                    }[model_type]
+                }
+            except:
+                info[model_type.value] = {
+                    "type": model_type.value,
+                    "loaded": False
+                }
+        
+        return info
+    
     def get_model(self, model_type: ModelType):
         """Получение модели по типу"""
         model = self.models.get(model_type.value)
@@ -91,13 +116,10 @@ class ModelService:
     ) -> Dict[str, Any]:
         """Предсказание темы для текста"""
         
-        # Получение модели
         model_data = self.get_model(model_type)
         
         if model_type in [ModelType.LDA, ModelType.NMF]:
-            # Предобработка
             processed_text = self.preprocessor.preprocess(text)
-            # Векторизация
             X = model_data['vectorizer'].transform([processed_text])
             
             # Предсказание
@@ -109,11 +131,9 @@ class ModelService:
             topic_id = int(np.argmax(topic_dist))
             probability = float(topic_dist[topic_id])
             
-            # Название темы
             topics = model_data.get('topics', [])
             topic_name = topics[topic_id] if topic_id < len(topics) else f"Тема {topic_id+1}"
             
-            # Топ-слова
             top_words = []
             if return_top_words:
                 if model_type == ModelType.LDA:
@@ -135,8 +155,7 @@ class ModelService:
             if return_top_words and topic_id != -1 and topic_id in topic_model.get_topics():
                 topic_words = topic_model.get_topic(topic_id)
                 top_words = [word for word, _ in topic_words[:10]]
-        
-        # Формирование результата
+    
         result = {
             "text": text[:100] + "..." if len(text) > 100 else text,
             "model_type": model_type,
