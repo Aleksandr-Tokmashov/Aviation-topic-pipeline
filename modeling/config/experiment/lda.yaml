@@ -1,0 +1,4 @@
+n_topics_list: [5, 10, 15]
+best_n_topics: 10
+max_features: 2000
+random_state: 42

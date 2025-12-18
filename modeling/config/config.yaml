@@ -1,0 +1,27 @@
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  models: "models"
+  
+data:
+  files:
+    - "aeroflot_official_posts.csv"
+    - "aviatorshina_posts.csv"
+    - "favt_ru_posts.csv"
+    - "s7newsroom_posts.csv"
+    - "AviaComments_posts.csv"
+    - "rumayday_posts.csv"
+    - "aviationmode_posts.csv"
+  
+  filters:
+    min_length: 20
+    max_length: 2500
+    max_word_count: 400
+
+preprocessing:
+  extra_stopwords: ["наш", "свой", "который", "это", "весь", "сам"]
+  min_word_length: 2
+
+mlflow:
+  experiment_name: "topic_modeling"
+  tracking_uri: "mlruns"

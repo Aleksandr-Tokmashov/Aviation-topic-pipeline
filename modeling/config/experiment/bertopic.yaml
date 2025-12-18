@@ -1,0 +1,6 @@
+n_topics_list: [8, 10, 12]
+min_topic_sizes: [30, 40, 50]
+best_n_topics: 12
+best_min_topic_size: 50
+embedding_model: "cointegrated/rubert-tiny2"
+random_state: 42

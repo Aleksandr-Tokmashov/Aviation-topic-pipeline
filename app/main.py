@@ -42,9 +42,9 @@ async def startup_event():
     logger.info("Загрузка моделей...")
     success = model_service.load_models()
     if success:
-        logger.info("✅ Модели успешно загружены")
+        logger.info("Модели успешно загружены")
     else:
-        logger.warning("⚠️ Некоторые модели не загружены")
+        logger.warning("Некоторые модели не загружены")
 
 # Эндпоинты
 @app.get("/")
@@ -69,7 +69,6 @@ async def health():
         "status": "healthy" if models_loaded else "degraded",
         "models": models_status,
         "environment": settings.ENVIRONMENT,
-        "timestamp": datetime.now().isoformat()
     }
 
 @app.get("/models")
@@ -97,33 +96,6 @@ async def predict(request: TextRequest):
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
         logger.error(f"Ошибка предсказания: {e}")
-        raise HTTPException(status_code=500, detail="Внутренняя ошибка сервера")
-
-@app.post("/predict/batch")
-async def predict_batch(request: BatchRequest):
-    """
-    Пакетное предсказание тем
-    
-    - texts: список текстов (максимум 100)
-    - model_type: тип модели
-    """
-    if len(request.texts) > settings.MAX_BATCH_SIZE:
-        raise HTTPException(
-            status_code=400,
-            detail=f"Максимальное количество текстов: {settings.MAX_BATCH_SIZE}"
-        )
-    
-    try:
-        result = model_service.predict_batch(
-            texts=request.texts,
-            model_type=request.model_type,
-            parallel=request.parallel_processing
-        )
-        return result
-    except ValueError as e:
-        raise HTTPException(status_code=400, detail=str(e))
-    except Exception as e:
-        logger.error(f"Ошибка пакетного предсказания: {e}")
         raise HTTPException(status_code=500, detail="Внутренняя ошибка сервера")
 
 @app.post("/predict/file")
@@ -171,7 +143,6 @@ async def predict_file(
         result = model_service.predict_batch(
             texts=texts,
             model_type=ModelType(model_type),
-            parallel=True
         )
         
         return {
