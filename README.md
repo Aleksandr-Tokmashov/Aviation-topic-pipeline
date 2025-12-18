@@ -46,7 +46,7 @@ Aviation-topic-pipeline/
 ├── mlruns/                         # MLflow трекинг экспериментов
 ├── my-artifacts/                   # DVC артефакты
 ├── Dockerfile                      # Docker конфигурация
-├── docker-compose.yml              # Мультиконтейнерная настройка
+├── Dockerfile.light                # Конфигурация облегченного Docker образа
 ├── pyproject.toml                  # Poetry зависимости
 ├── requirements*.txt               # Файлы требований
 └── .env.example                    # Шаблон переменных окружения
