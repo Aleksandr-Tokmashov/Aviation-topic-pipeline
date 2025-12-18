@@ -159,6 +159,38 @@ PHONE=ваш_номер_телефона
 mlflow ui --port 5000
 ```
 
+### Схема пайплайна
+```mermaid
+graph TD
+    A[Telegram Channels] --> B[Parser];
+    B --> C[Raw Data<br/>CSV files];
+    C --> D[Preprocessing];
+    D --> E[Cleaned Text];
+    E --> F[Model Training];
+    
+    F --> G[LDA];
+    F --> H[NMF];
+    F --> I[BERTopic];
+    
+    G --> J[Save Models];
+    H --> J;
+    I --> J;
+    
+    J --> K[MLflow Tracking];
+    J --> L[Model Registry];
+    
+    L --> M[FastAPI];
+    L --> N[Streamlit];
+    
+    M --> O[REST API];
+    N --> P[Web UI];
+    
+    O --> Q[Predictions];
+    P --> Q;
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style Q fill:#9f9,stroke:#333,stroke-width:2px
+```
 ## Лицензия
 Этот проект лицензирован под MIT License - смотрите файл LICENSE для деталей.
 
