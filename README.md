@@ -64,16 +64,6 @@ Aviation-topic-pipeline/
 # Клонирование репозитория
 git clone https://github.com/Aleksandr-Tokmashov/Aviation-topic-pipeline.git
 cd Aviation-topic-pipeline
-
-# Установка Poetry (если не установлен)
-curl -sSL https://install.python-poetry.org | python3 -
-
-# Установка зависимостей
-poetry install
-
-# Настройка окружения
-cp .env.example .env
-# Отредактируйте .env со своими настройками
 ```
 
 ### Запуск инференс-сервиса с Docker
